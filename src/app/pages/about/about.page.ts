@@ -11,21 +11,23 @@ import { Watch } from '@shared/components/watch/watch'
   <section class="flex flex-col max-w-screen-lg justify-between mx-auto gap-16 dark:text-gray-200 overflow-y-hidden">
   <div class="flex flex-col gap-5">
       <h1 class="text-2xl font-semibold dark:text-white">About Me</h1>
-      <p class="justify-start">I'm Marc Kevin Flores, a software
+      <p class="justify-start">I'm Enamul Chowdhury, a software
         engineer with over
-        five years of
-        experience. I specialize in turning
+        2 years of
+        experience. I specialize in transforming ideas into robust, 
+        user-friendly software solutions,  
+        combining innovation with seamless functionality along with turning
         ideas into polished software, blending innovation with user-friendly design. 🚀</p>
       <p *ngFor="let a of aboutDetails"><b class="dark:text-white text-black">{{a.title}}</b><br />{{a.desc}}
       </p>
   </div>
-  <div class="flex flex-col gap-5">
+  <!-- <div class="flex flex-col gap-5">
   <h1 class="text-2xl font-semibold dark:text-white">Activity:</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <music/>
     <watch/>
   </div>
-  </div>
+  </div> -->
 
 <div class="flex flex-col gap-5">
 <h1 class="text-2xl font-semibold dark:text-white">Contact Information:</h1>
@@ -55,10 +57,10 @@ export class AboutPage{
   public aboutDetails =  [
     {
       title: 'What I Do',
-      desc: `I've worked on a variety of projects, ranging from
-      mobile apps and web development to optimizing performance, writing clean code, and emphasizing good design
+      desc: `I've worked on a variety of projects, including
+      both frontend and backend to optimize performance, writing clean code, and emphasizing good design
       principles. I take pride in my attention to detail and commitment to creating efficient, well-designed solutions
-      that meet both user needs and industry standards. I'm your go-to person for JavaScript frameworks and ensuring
+      that meet both user needs and industry standards ensuring
       the overall quality of software development projects.`
     },
     {
@@ -69,8 +71,8 @@ export class AboutPage{
     },
     {
       title: 'Off-Duty Fun',
-      desc: `During my off-duty hours, I find joy in coding, exploring new aspects of coding, and staying updated by reading
-      the latest blogs on technology. I also enjoy playing games on my phone, watching videos, listening to popular
+      desc: `During my off-duty hours, I find joy in exploring new aspects of coding, and staying updated by reading
+      the latest blogs on technology. I also enjoy playing games on my desktop, watching videos, listening to popular
       songs, and taking refreshing walks outside. It's important for me to spend quality time with my family and
       friends.`
     },
@@ -85,18 +87,17 @@ export class AboutPage{
   public contactInfo = [
     {
       title: 'Address',
-      desc: `Caloocan City, Metro Manila, Philippines`,
-      link: 'https://maps.app.goo.gl/dT2aE2RxeQTEA7ne7'
+      desc: `Dhaka City, Mohammadpur, Bangladesh`,
+      link: 'https://maps.app.goo.gl/7ehkGLHqbQA4S1L9A'
     },
     {
       title: 'Mobile Number',
-      desc: '+639092884082',
-      link: 'tel:+639092884082'
+      desc: '+8801621202529',
     },
     {
       title: 'Email',
-      desc: 'marc@kevinflor.es',
-      link: 'mailto:marc@kevinflor.es'
+      desc: 'sakibenam3618@gmail.com',
+      link: 'mailto:sakibenam3618@gmail.com'
     }
   ]
 }
