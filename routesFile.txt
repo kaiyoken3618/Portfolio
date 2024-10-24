@@ -1,5 +1,1 @@
-/
-/about
-/project
-/blog
-/blog/how-to-start-learning-to-code-for-short-details
+/*    /index.html   200
