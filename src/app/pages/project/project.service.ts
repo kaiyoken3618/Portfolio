@@ -10,7 +10,7 @@ export interface ProjectState {
 export class ProjectService {
   private http = inject(HttpClient)
   // private jsonUrl = `${environment.url}/assets/json/projects.json`;
-  private jsonUrl = `http://localhost:4200/assets/json/projects.json`;
+  private jsonUrl = `https://enamul18.netlify.app/assets/json/projects.json`;
 
   public state = signal<ProjectState>({ projects: []});
   public projects: Signal<ProjectSchema[]> = computed(() => this.state().projects);
