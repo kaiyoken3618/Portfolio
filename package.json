@@ -10,7 +10,7 @@
     "serve:ssr": "node dist/client/server/main.js",
     "build:ssr": "ng build && ng run client:server",
     "prerender": "ng run client:prerender", 
-    "build": "ng build --configuration=production && cp src/_redirects dist/client/browser/_redirects"
+    "build": "ng build"
   },
   "private": true,
   "dependencies": {

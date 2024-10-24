@@ -30,7 +30,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/cv.pdf"
+              "src/cv.pdf", 
+              "src/_redirects.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -100,7 +101,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/cv.pdf"
+              "src/cv.pdf", 
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss"
