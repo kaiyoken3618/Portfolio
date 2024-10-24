@@ -24,7 +24,7 @@
     "@angular/platform-server": "^17.1.2",
     "@angular/router": "^17.1.2",
     "@angular/ssr": "^17.1.2",
-    "express": "4.17",
+    "express": "4.21",
     "medium-zoom": "^1.1.0",
     "postcss-scss": "^4.0.9",
     "rxjs": "^7.8.1",
