@@ -15,7 +15,7 @@ export class LanguageToolService {
     this.getAll();
   }
   // private jsonUrl = `${environment.url}/assets/json/language-tools.json`;
-  private jsonUrl = `http://localhost:4200/assets/json/language-tools.json`;
+  private jsonUrl = `https://enamul18.netlify.app/assets/json/language-tools.json`;
 
   public state = signal<LanguageToolState>({ data: [] });
   public languageTools: Signal<LanguageTool[]> = computed(
