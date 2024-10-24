@@ -5,7 +5,6 @@ import { RouterOutlet } from '@angular/router';
 import { Footer } from '@layout/footer/footer';
 import { ThemeService } from '@core/services/theme.service';
 import { DOCUMENT, NgClass } from '@angular/common';
-import { environment } from '@env/environment';
 @Component({
   selector: 'app',
   template: `
