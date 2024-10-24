@@ -35,13 +35,13 @@ export class App implements OnInit {
     this.elementRef.nativeElement.removeAttribute("ng-version");
     this.elementRef.nativeElement.removeAttribute("ng-server-context");
 
-    if(environment.production){
-      const script = this.renderer.createElement('script');
-      script.defer = true;
-      script.src = 'https://cloud.umami.is/script.js';
-      script.setAttribute('data-website-id', environment.umamiWebsiteId);
-      this.renderer.appendChild(this.document.head, script);
-    }
+    // if(environment.production){
+    //   const script = this.renderer.createElement('script');
+    //   script.defer = true;
+    //   script.src = 'https://cloud.umami.is/script.js';
+    //   script.setAttribute('data-website-id', environment.umamiWebsiteId);
+    //   this.renderer.appendChild(this.document.head, script);
+    // }
   }
 
 }
