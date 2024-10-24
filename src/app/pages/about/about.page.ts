@@ -1,10 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component, ViewEncapsulation, effect, inject } from '@angular/core';
 import { MetaService } from '@core/services/meta.service';
-import { TraktTvService } from '@core/services/trakt-tv.service';
 import profileData from '@data/profile.data';
-import { Music } from '@shared/components/music/music'
-import { Watch } from '@shared/components/watch/watch'
 @Component({
   selector: 'about',
   template: `
@@ -41,12 +38,11 @@ import { Watch } from '@shared/components/watch/watch'
 </section>
 `,
   encapsulation: ViewEncapsulation.None,
-  imports: [NgFor, Music, Watch],
+  imports: [NgFor],
   standalone: true
 })
 export class AboutPage{
   metaService = inject(MetaService)
-  traktTvService = inject(TraktTvService)
   constructor(){
     this.metaService.setMetaTags(
       `About - ${profileData.name}`,

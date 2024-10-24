@@ -2,7 +2,6 @@ import { Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import profileData from '@data/profile.data';
-import { environment } from '@env/environment';
 
 type MetaImageStyle = 'summary_large_image' | 'summary';
 
@@ -20,9 +19,9 @@ export class MetaService {
   get contentType(): string{
    return this.urlKeywords.some(str => this.router.url.includes(str)) ? 'article' : 'website'
   }
-  get rootUrl(): string{
-    return `${environment.url}${this.router.url}`
-  }
+  // get rootUrl(): string{
+  //   return `${environment.url}${this.router.url}`
+  // }
 
   setMetaTags(title: string, description: string, keywords?: string | Array<string> | null, image?: string | null , metaImageStyle?: MetaImageStyle): void{
     this.title.setTitle(title);
@@ -33,13 +32,13 @@ export class MetaService {
       {name: 'authors', content: profileData.name},
       {name: 'og:title', content: title},
       {name: 'og:description', content: description},
-      {name: 'og:url', content: this.rootUrl},
+      // {name: 'og:url', content: this.rootUrl},
       {name: 'og:image', content: image || this.defaultImage},
       {name: 'og:locale', content: 'en_US'},
       {name: 'og:type', content: this.contentType},
       {name: 'og:site_name', content: title},
       {name: 'twitter:card', content: metaImageStyle || 'summary_large_image'},
-      {name: 'twitter:url', content: this.rootUrl},
+      // {name: 'twitter:url', content: this.rootUrl},
       {name: 'twitter:title', content: title},
       {name: 'twitter:description', content: description},
       {name: 'twitter:image', content: image || this.defaultImage},

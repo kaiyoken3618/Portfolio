@@ -1,9 +1,8 @@
 import { Injectable, Signal, computed, signal } from '@angular/core';
-import { environment } from '@env/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ThemeService {
+export class ThemeService { 
   public color = signal<string>(this.getInitialColor());
   public openColor = signal<boolean>(false)
   public getColor: Signal<string> = computed(() => this.color());
@@ -24,7 +23,7 @@ export class ThemeService {
         return storedColor;
       }
     }
-    return environment.mainColor
+    return '#3867d6'
 }
 
 }
